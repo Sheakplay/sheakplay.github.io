@@ -184,15 +184,6 @@ main{ position:fixed; inset:0; z-index:10 }
 
 h1{ font-size:clamp(30px, 5.2vw, 52px); font-weight:700; letter-spacing:-1px; line-height:1.08 }
 .tagline{ margin-top:10px; font-size:clamp(15px,2.2vw,19px); color:var(--text-dim); font-weight:500 }
-.badge{
-  display:inline-flex; align-items:center; gap:8px; margin-top:18px;
-  padding:7px 14px; border-radius:999px; font-size:13px; font-weight:600;
-  background:rgba(0,0,0,.35); border:1px solid rgba(255,255,255,.18);
-  -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px);
-}
-.dot{ width:8px; height:8px; border-radius:50%; background:#38e08b; box-shadow:0 0 10px #38e08b; animation: pulse 2s infinite }
-@keyframes pulse{ 0%,100%{opacity:1; transform:scale(1)} 50%{opacity:.45; transform:scale(.8)} }
-
 .grid2{ display:grid; grid-template-columns:1fr 1fr; gap:20px; margin-top:20px }
 @media(max-width:760px){ .grid2{ grid-template-columns:1fr } .hero{ padding:26px } }
 
@@ -312,7 +303,6 @@ code{ background:rgba(0,0,0,.4); padding:2px 6px; border-radius:6px; font-size:1
           <h1>Sheakplay</h1>
           <!-- ← ЗАМЕНИ должность -->
           <div class="tagline">Продуктовый дизайнер &amp; фронтенд-разработчик</div>
-          <div class="badge"><span class="dot"></span> Открыт к новым проектам</div>
         </div>
       </div>
 
@@ -466,5 +456,6 @@ document.querySelectorAll('.project').forEach(card => {
 });
 
 </script>
-</body>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495" integrity="sha512-iIg7k2xntmwu6/uSb5tpc/hySgZc4eoL31yB29W6tJFo2akwjPWcEqnCEdJvGexCL0KEQwVYv5BlowfhVz26hg==" data-cf-beacon='{"version":"2024.11.0","token":"1954b47c125f43f8b4338b3c4f804e4f","spa":2}' crossorigin="anonymous"></script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a43cdd2a0d89bf46',t:'MTc5MDg3MjM1Mg=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
